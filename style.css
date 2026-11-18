@@ -150,3 +150,44 @@ h2{font-size:clamp(38px,4.15vw,57px);line-height:1.18;font-weight:750}
  .sticky-actions .sticky-call{display:inline-flex!important;flex:1 1 0!important;width:auto!important;min-width:0;min-height:50px;padding:13px 7px;box-sizing:border-box;font-size:13px}
 }
 @media(min-width:681px){.sticky-actions .sticky-book{display:none!important}}
+
+/* La Relance — carte tarifs, packs et formules */
+.section-pricing{background:radial-gradient(ellipse at 75% 25%,#302015 0%,#1c110b 60%,#160e0a 100%)}
+.pricing-heading{align-items:end}
+.pricing-demo-note{padding:14px 18px;margin:0 0 25px;border:1px solid #9d754c6a;border-radius:10px;background:#3d2a1b86;color:#dbc6b1;font-size:12px;line-height:1.65}
+.pricing-demo-note strong{color:#f3d3a4}
+.pricing-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.pricing-card{display:flex;flex-direction:column;min-width:0;padding:29px 28px 26px;border-radius:18px;border:1px solid #8056388a;background:linear-gradient(160deg,#352216,#25170e);transition:transform .2s,border-color .2s}
+.pricing-card:hover{transform:translateY(-4px);border-color:#d7a86d}
+.pricing-card-featured{background:linear-gradient(165deg,#49301d,#2a190e);border-color:#b98853}
+.pricing-card-top{display:flex;align-items:center;justify-content:space-between;color:#e1b781}
+.pricing-category,.pricing-pack-label{font-size:10px;letter-spacing:.13em;font-weight:800;color:#e6bd86}
+.pricing-card-top>span:last-child{font-size:23px}
+.pricing-card h3{font:750 clamp(22px,2vw,30px)/1.22 "Plus Jakarta Sans",sans-serif;letter-spacing:-.045em;color:#fff0dc;margin:20px 0 15px;min-height:70px}
+.pricing-description{font-size:13px;line-height:1.75;color:#cbb5a1;flex:1;min-height:92px}
+.pricing-amount{display:flex;align-items:baseline;gap:8px;border-top:1px solid #a77e4d69;margin-top:23px;padding-top:20px}
+.pricing-amount strong{font:800 clamp(34px,3vw,46px)/1.1 "Plus Jakarta Sans",sans-serif;color:#f4cc94;letter-spacing:-.06em}
+.pricing-amount span,.pricing-duration{font-size:12px;color:#cdb7a4}
+.pricing-duration{margin-top:8px}
+.pricing-cta{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding:12px 0;border-top:1px solid #9b724c70;color:#eec18b;text-decoration:none;font-size:12px;font-weight:800}
+.pricing-cta:hover{color:#fff4e6}
+.pricing-pack-heading{display:flex;align-items:end;justify-content:space-between;gap:25px;margin:49px 0 22px}
+.pricing-pack-heading h3{font:750 clamp(25px,2.9vw,37px)/1.22 "Plus Jakarta Sans",sans-serif;letter-spacing:-.055em;margin:12px 0 0}
+.pricing-pack-heading h3 em{color:#e3b67f;font-style:normal}
+.pricing-pack-heading>p{font-size:13px;color:#ccb7a5;max-width:365px}
+.pricing-packs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.pricing-pack{display:flex;flex-direction:column;min-width:0;border:1px solid #7553398a;background:#291a13;border-radius:15px;padding:24px;gap:12px}
+.pricing-pack-popular{border-color:#c39760;background:#362318}
+.pricing-pack h4{font:750 19px/1.35 "Plus Jakarta Sans",sans-serif;color:#fff0dc;letter-spacing:-.04em;margin:0}
+.pricing-pack>p{font-size:12px;line-height:1.7;color:#c6ac97;flex:1;margin:0}
+.pricing-pack-bottom{display:flex;align-items:end;justify-content:space-between;gap:8px;flex-wrap:wrap;border-top:1px solid #8660447a;padding-top:15px}
+.pricing-pack-bottom>div{display:flex;flex-direction:column;gap:6px}
+.pricing-pack-bottom strong{font:800 30px "Plus Jakarta Sans",sans-serif;letter-spacing:-.05em;color:#f1c88f}
+.pricing-pack-bottom span{font-size:11px;color:#d2bba5}
+.pricing-pack-bottom s{color:#917865}
+.pricing-save{display:inline-block;border:1px solid #b58c5d74;border-radius:99px;padding:6px 9px;background:#64452d6e;color:#f3d1a4!important;font-weight:700}
+.pricing-footer{display:flex;justify-content:space-between;align-items:center;gap:24px;border-top:1px solid #8660445e;padding-top:24px;margin-top:28px}
+.pricing-footer p{font-size:11px;line-height:1.7;color:#b9a28e;max-width:690px;margin:0}
+.pricing-footer .btn{font-size:11px;flex-shrink:0}
+@media(max-width:1000px){.pricing-cards,.pricing-packs{gap:12px}.pricing-card{padding:23px 19px}.pricing-pack{padding:19px}.pricing-footer{align-items:start;flex-direction:column}}
+@media(max-width:680px){.pricing-heading{margin-bottom:20px}.pricing-cards,.pricing-packs{grid-template-columns:1fr;gap:13px}.pricing-card h3{min-height:0;margin:13px 0}.pricing-description{min-height:0}.pricing-card{padding:24px}.pricing-pack-heading{align-items:start;flex-direction:column;gap:12px;margin-top:35px}.pricing-pack-heading h3{margin-top:8px}.pricing-pack-heading>p{margin:0}.pricing-footer{margin-top:20px}.pricing-footer .btn{width:100%;justify-content:space-between;white-space:normal}}
