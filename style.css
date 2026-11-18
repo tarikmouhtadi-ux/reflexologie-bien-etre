@@ -69,3 +69,46 @@ h2{font-size:clamp(38px,4.15vw,57px);line-height:1.18;font-weight:750}
 .reservation-popup-phone a{font-size:19px;font-weight:800;color:#f2c78e}
 @media(max-width:950px){.reservation-popup-inner{grid-template-columns:1fr;gap:26px;padding:32px}.reservation-popup-side{padding:24px}}
 @media(max-width:680px){.reservation-popup-inner{width:calc(100% - 26px);padding:25px 19px;gap:22px}.reservation-popup-actions{align-items:stretch;flex-direction:column}.reservation-popup-actions .btn{justify-content:space-between}.reservation-popup-side strong{font-size:21px}}
+
+/* Rythme vertical plus compact : optimisation desktop sans sacrifier la lisibilité */
+@media(min-width:1001px){
+  .section{padding-top:66px;padding-bottom:66px}
+  .section-heading{margin-bottom:29px;gap:30px}
+  .section-label{margin-bottom:13px}
+  h2{margin-bottom:17px}
+  .hero-grid{min-height:590px;padding-top:36px;padding-bottom:42px}
+  .hero-showcase{height:475px}
+  .hero-bottom-inner{padding-top:13px;padding-bottom:13px}
+  .service-visual{height:220px}
+  .service-card-body{padding-top:23px;padding-bottom:24px}
+  .service-card h3{margin-top:11px;margin-bottom:11px}
+  .detail-grid,.pressure-grid,.values-grid,.faq-grid,.contact-grid{gap:55px}
+  .pressure-feature{min-height:435px}
+  .focus-panel{padding:26px}
+  .step{padding-top:22px;padding-bottom:25px}
+  .step h3{margin-top:19px}
+  .values-photo{height:220px}
+  .values-list>div{padding:14px 0}
+  .room-banner{height:265px;margin-top:23px}
+  .booking-heading{margin-bottom:21px}
+  .reservation-popup-inner{padding:37px 43px;gap:38px}
+  .reservation-popup-actions{margin-top:22px;margin-bottom:13px}
+  .reservation-popup-side{padding:23px 27px}
+  .faq-items summary{padding:17px 0}
+}
+@media(min-width:681px) and (max-width:1000px){
+  .section{padding-top:62px;padding-bottom:62px}
+  .section-heading{margin-bottom:27px}
+  .hero-grid{min-height:0;padding-top:30px;padding-bottom:40px}
+  .pressure-feature{min-height:345px}
+  .room-banner{height:270px}
+}
+@media(max-width:680px){
+  .section{padding-top:51px;padding-bottom:51px}
+  .section-heading{margin-bottom:23px}
+  .section-label{margin-bottom:12px}
+  h2{margin-bottom:15px}
+  .hero-grid{padding-top:26px;padding-bottom:32px}
+  .room-banner{margin-top:19px}
+  .section-reservation{padding-top:55px;padding-bottom:55px}
+}
