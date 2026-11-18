@@ -170,20 +170,25 @@
   </section>
 
   <section class="section section-reservation" id="reservation">
-    <div class="container reservation-shell">
-      <div class="reservation-info"><span class="section-label">07 / PRENDRE RENDEZ-VOUS</span><h2>Et si on en<br><em>parlait ?</em></h2><p>Une question sur la réflexologie auriculaire ou la pressothérapie ? Contactez-nous pour échanger sur votre demande et fixer un créneau.</p><a class="reservation-phone" href="tel:+33766861379"><span>APPELER LE CABINET</span><strong>07 66 86 13 79</strong><span aria-hidden="true">↗</span></a><p class="reservation-hint">La réservation est confirmée directement par le cabinet. Aucun créneau n'est bloqué automatiquement sur le site.</p></div>
-      <form class="appointment-form" id="appointment-form">
-        <div class="form-head"><span>PRÉPARER UNE DEMANDE</span><span>PAR SMS</span></div>
-        <label for="service">Prestation souhaitée</label>
-        <select id="service" name="service" required><option value="" selected disabled>Choisir une prestation</option><option>Réflexologie auriculaire au laser</option><option>Pressothérapie</option><option>Demande de renseignements</option></select>
-        <div class="form-pair"><div><label for="firstname">Votre prénom</label><input id="firstname" name="firstname" type="text" placeholder="Votre prénom" autocomplete="given-name" maxlength="70" required></div><div><label for="phone">Votre téléphone</label><input id="phone" name="phone" type="tel" placeholder="06…" autocomplete="tel" maxlength="30" required></div></div>
-        <label for="preferences">Vos disponibilités</label><input id="preferences" name="preferences" type="text" placeholder="Ex. : mardi après-midi, vendredi matin" maxlength="180">
-        <label for="message">Votre message (facultatif)</label><textarea id="message" name="message" rows="3" placeholder="Une question ou une information utile…" maxlength="450"></textarea>
-        <button class="btn btn-gold submit-btn" type="submit">Envoyez ma demande <span aria-hidden="true">↗</span></button>
-        <button class="copy-request" type="button" id="copy-request">Ou copier ma demande</button>
-        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
-        <p class="form-note">Le formulaire prépare un SMS sur votre appareil : aucune donnée n'est enregistrée sur le site. Vous devez confirmer l'envoi dans votre application.</p>
-      </form>
+    <div class="container booking-heading">
+      <span class="section-label">07 / RÉSERVER EN LIGNE</span>
+      <h2>Votre prochain rendez-vous<br><em>commence ici.</em></h2>
+      <p>Choisissez directement votre date et votre horaire dans le calendrier sécurisé ci-dessous. Les disponibilités affichées sont celles de l'agenda de réservation.</p>
+    </div>
+    <div class="container cal-shell">
+      <div class="cal-intro">
+        <div class="cal-intro-label"><span class="online-dot"></span> PRISE DE RENDEZ-VOUS EN LIGNE</div>
+        <strong>Choisissez votre créneau</strong>
+        <p>Sélectionnez un horaire puis renseignez vos coordonnées pour finaliser votre réservation.</p>
+        <span class="duration-pill">◷ &nbsp; Rendez-vous de 30 minutes</span>
+      </div>
+      <div class="cal-embed" id="cal-booking" aria-label="Calendrier de réservation Cal.com">
+        <div class="cal-loading">Chargement des créneaux disponibles…</div>
+      </div>
+      <div class="booking-alternative">
+        <p>Le calendrier ne s'affiche pas ? <a href="https://cal.com/tarik-m-r2b3gr/30min" target="_blank" rel="noopener noreferrer">Ouvrir la réservation dans un nouvel onglet ↗</a></p>
+        <a href="tel:+33766861379" class="booking-phone"><span>Ou contactez-nous par téléphone</span><strong>07 66 86 13 79 ↗</strong></a>
+      </div>
     </div>
   </section>
 
