@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tarikmouhtadi-ux.github.io/reflexologie-bien-etre/sitemap.xml
