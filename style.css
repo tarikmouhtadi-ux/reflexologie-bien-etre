@@ -142,3 +142,11 @@ h2{font-size:clamp(38px,4.15vw,57px);line-height:1.18;font-weight:750}
   .sticky-actions .sticky-call{display:flex!important;flex:1 1 100%;width:100%;font-size:14px;min-height:50px;padding:13px 18px;box-sizing:border-box}
 }
 
+
+/* Barre mobile : réservation et appel côte à côte. Sur PC, seul Appeler est fixe. */
+@media(max-width:680px){
+ .sticky-actions{display:flex!important;left:12px;right:12px;gap:9px}
+ .sticky-actions .sticky-book{display:inline-flex!important;flex:1 1 0!important;width:auto!important;min-width:0;min-height:50px;padding:13px 7px;box-sizing:border-box;background:#2c1c13;color:#f4d8b0;border-color:#bc8d57;font-size:13px}
+ .sticky-actions .sticky-call{display:inline-flex!important;flex:1 1 0!important;width:auto!important;min-width:0;min-height:50px;padding:13px 7px;box-sizing:border-box;font-size:13px}
+}
+@media(min-width:681px){.sticky-actions .sticky-book{display:none!important}}
