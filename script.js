@@ -3,7 +3,8 @@ const menu=document.querySelector('.menu-toggle');
 const nav=document.getElementById('site-nav');
 menu?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Fermer le menu':'Ouvrir le menu');});
 nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu?.setAttribute('aria-expanded','false');}));
-function getRequest(){const f=document.getElementById('appointment-form');if(!f.reportValidity())return null;const val=id=>document.getElementById(id).value.trim();return 'Bonjour La Relance Bien-être, je souhaite vous contacter pour '+val('service')+'.\nPrénom : '+val('firstname')+'\nTéléphone : '+val('phone')+'\nDisponibilités : '+(val('preferences')||'à définir')+(val('message')?'\nMessage : '+val('message'):'')+'\nMerci de me confirmer les possibilités de rendez-vous.';}
-const status=document.getElementById('form-status');
-document.getElementById('appointment-form')?.addEventListener('submit',e=>{e.preventDefault();const msg=getRequest();if(!msg)return;status.textContent='Votre application SMS va s’ouvrir : pensez à confirmer l’envoi.';window.location.href='sms:+33766861379?body='+encodeURIComponent(msg);});
-document.getElementById('copy-request')?.addEventListener('click',async()=>{const msg=getRequest();if(!msg)return;try{await navigator.clipboard.writeText(msg);status.textContent='Demande copiée. Vous pouvez la coller dans votre application de messages.';}catch{status.textContent='La copie automatique est indisponible. Vous pouvez contacter le cabinet au 07 66 86 13 79.';}});
+/* Calendrier de réservation Cal.com — chargement officiel et sans serveur. */
+(function(C,A,L){let p=function(a,ar){a.q.push(ar)};let doc=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];doc.head.appendChild(doc.createElement("script")).src=A;cal.loaded=true}if(ar[0]===L){const api=function(){p(api,arguments)};const ns=ar[1];api.q=api.q||[];if(typeof ns==="string"){cal.ns[ns]=cal.ns[ns]||api;p(cal,ar)}else p(cal,ar);return}p(cal,ar)}})(window,"https://app.cal.com/embed/embed.js","init");
+Cal("init","relance",{origin:"https://app.cal.com"});
+Cal.ns.relance("inline",{elementOrSelector:"#cal-booking",calLink:"tarik-m-r2b3gr/30min",config:{layout:"month_view",theme:"dark"}});
+Cal.ns.relance("ui",{theme:"dark",styles:{branding:{brandColor:"#c99b61"}},hideEventTypeDetails:false,layout:"month_view"});
