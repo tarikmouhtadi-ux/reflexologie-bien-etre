@@ -164,32 +164,33 @@
         <details><summary>Comment se déroule une première visite ? <span>+</span></summary><p>Un échange permet d'abord de comprendre votre demande et de présenter la méthode. Le déroulement précis et la durée sont confirmés avec le cabinet lors de la réservation.</p></details>
         <details><summary>Combien coûte une séance ? <span>+</span></summary><p>Les tarifs et les éventuelles formules vous sont communiqués directement par le cabinet avant toute réservation. Aucun paiement en ligne n'est demandé sur cette page de démonstration.</p></details>
         <details><summary>Où se trouve La Relance Bien-être ? <span>+</span></summary><p>Le cabinet se situe à Épinay-sous-Sénart, dans l'Essonne (91). L'adresse précise et les informations pratiques sont communiquées lors de votre prise de rendez-vous.</p></details>
-        <details><summary>Comment réserver un créneau ? <span>+</span></summary><p>Sélectionnez une date et un horaire directement dans le calendrier de réservation en ligne, puis renseignez vos coordonnées. Vous pouvez aussi appeler le 07 66 86 13 79 si vous préférez échanger avec le cabinet.</p></details>
+        <details><summary>Comment réserver un créneau ? <span>+</span></summary><p>Cliquez sur « Choisir mon créneau » ou sur le bouton flottant de réservation, puis sélectionnez une date et un horaire dans la fenêtre Cal.com. Vous pouvez aussi appeler le 07 66 86 13 79.</p></details>
       </div>
     </div>
   </section>
 
-  <section class="section section-reservation" id="reservation">
-    <div class="container booking-heading">
-      <span class="section-label">07 / RÉSERVER EN LIGNE</span>
+  <section class="section section-reservation reservation-popup" id="reservation">
+  <div class="container reservation-popup-inner">
+    <div>
+      <span class="section-label">07 / PRENDRE RENDEZ-VOUS</span>
       <h2>Votre prochain rendez-vous<br><em>commence ici.</em></h2>
-      <p>Choisissez directement votre date et votre horaire dans le calendrier sécurisé ci-dessous. Les disponibilités affichées sont celles de l'agenda de réservation.</p>
+      <p>Choisissez votre créneau de 30 minutes directement dans notre calendrier de réservation. La fenêtre de réservation s’ouvre sans quitter le site.</p>
+      <div class="reservation-popup-actions">
+        <button class="btn btn-gold" type="button" id="open-booking" data-cal-link="tarik-m-r2b3gr/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":true}'>Choisir mon créneau <span aria-hidden="true">↗</span></button>
+        <a href="https://cal.com/tarik-m-r2b3gr/30min" class="text-action" target="_blank" rel="noopener noreferrer">Ouvrir Cal.com dans un nouvel onglet ↗</a>
+      </div>
+      <p class="reservation-popup-caption">Réservation sécurisée via Cal.com. Les créneaux proposés sont ceux de l’agenda du praticien.</p>
     </div>
-    <div class="container cal-shell">
-      <div class="cal-intro">
-        <div class="cal-intro-label"><span class="online-dot"></span> PRISE DE RENDEZ-VOUS EN LIGNE</div>
-        <strong>Choisissez votre créneau</strong>
-        <p>Sélectionnez un horaire puis renseignez vos coordonnées pour finaliser votre réservation.</p>
-        <span class="duration-pill">◷ &nbsp; Rendez-vous de 30 minutes</span>
-      </div>
-      <div class="cal-embed" id="cal-booking" aria-label="Calendrier de réservation Cal.com">
-      </div>
-      <div class="booking-alternative">
-        <p>Le calendrier ne s'affiche pas ? <a href="https://cal.com/tarik-m-r2b3gr/30min" target="_blank" rel="noopener noreferrer">Ouvrir la réservation dans un nouvel onglet ↗</a></p>
-        <a href="tel:+33766861379" class="booking-phone"><span>Ou contactez-nous par téléphone</span><strong>07 66 86 13 79 ↗</strong></a>
-      </div>
-    </div>
-  </section>
+    <aside class="reservation-popup-side">
+      <div class="cal-intro-label"><span class="online-dot"></span> RÉSERVATION EN LIGNE</div>
+      <strong>Simple, rapide et pratique.</strong>
+      <div class="reservation-popup-step"><span>01</span> Choisissez votre date</div>
+      <div class="reservation-popup-step"><span>02</span> Sélectionnez un horaire</div>
+      <div class="reservation-popup-step"><span>03</span> Confirmez votre demande</div>
+      <div class="reservation-popup-phone">Vous préférez nous appeler ? <a href="tel:+33766861379">07 66 86 13 79 ↗</a></div>
+    </aside>
+  </div>
+</section>
 
   <section class="section section-contact" id="contact">
     <div class="container contact-grid">
