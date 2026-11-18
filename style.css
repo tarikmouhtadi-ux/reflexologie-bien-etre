@@ -134,3 +134,10 @@ h2{font-size:clamp(38px,4.15vw,57px);line-height:1.18;font-weight:750}
 @media(min-width:1001px){.services-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.service-card-body{padding:23px 21px 24px}.service-card h3{font-size:26px}.service-card p{font-size:13px;line-height:1.7}.service-card-head{padding:18px 20px 15px}.service-visual{height:220px}.mini-benefits{gap:6px}.mini-benefits li{font-size:10px}}
 @media(min-width:681px) and (max-width:1000px){.services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.services-grid .service-card:last-child{grid-column:1/-1;max-width:540px;width:100%;justify-self:center}}
 @media(max-width:680px){.services-grid{grid-template-columns:1fr}.service-card h3{font-size:27px}}
+
+/* Mobile : un seul bouton d'action permanent, Appeler */
+@media(max-width:680px){
+  .sticky-actions{left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom,0px))}
+  .sticky-actions .sticky-book{display:none!important}
+  .sticky-actions .sticky-call{display:flex!important;flex:1 1 100%;width:100%;font-size:14px;min-height:50px;padding:13px 18px;box-sizing:border-box}
+}
