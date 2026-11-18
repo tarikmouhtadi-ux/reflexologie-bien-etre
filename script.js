@@ -36,6 +36,6 @@ function openRelanceBooking() {
     window.open("https://cal.com/tarik-m-r2b3gr/30min","_blank","noopener,noreferrer");
   }
 }
-["open-booking","mobile-open-booking"].forEach(id=>{
+["hero-open-booking","open-booking","mobile-open-booking"].forEach(id=>{
   document.getElementById(id)?.addEventListener("click", openRelanceBooking);
 });
