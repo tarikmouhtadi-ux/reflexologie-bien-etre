@@ -26,9 +26,16 @@ nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classL
 Cal("init", "30min", {origin:"https://app.cal.com"});
 Cal.config = Cal.config || {};
 Cal.config.forwardQueryParams = true;
-Cal.ns["30min"]("floatingButton", {"calLink":"tarik-m-r2b3gr/30min","config":{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}});
+// Les boutons de réservation du site ouvrent Cal.com ; pas de bouton flottant supplémentaire.
 Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view","styles":{"branding":{"brandColor":"#c99b61"}}});
 /* Le bouton interne ouvre la même fenêtre ; en cas de blocage, le lien Cal.com reste disponible. */
-document.getElementById("open-booking")?.addEventListener("click", function() {
-  Cal.ns["30min"]("modal", {calLink:"tarik-m-r2b3gr/30min",config:{layout:"month_view",useSlotsViewOnSmallScreen:true}});
+function openRelanceBooking() {
+  if (window.Cal?.ns?.["30min"]) {
+    Cal.ns["30min"]("modal", {calLink:"tarik-m-r2b3gr/30min",config:{layout:"month_view",useSlotsViewOnSmallScreen:true}});
+  } else {
+    window.open("https://cal.com/tarik-m-r2b3gr/30min","_blank","noopener,noreferrer");
+  }
+}
+["open-booking","mobile-open-booking"].forEach(id=>{
+  document.getElementById(id)?.addEventListener("click", openRelanceBooking);
 });
