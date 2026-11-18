@@ -53,3 +53,19 @@ h2{font-size:clamp(38px,4.15vw,57px);line-height:1.18;font-weight:750}
 
 /* Cal.com : supprimer les bandes claires autour du calendrier sombre */
 #cal-booking,#cal-booking iframe{background:#17100d!important;color-scheme:unset!important}#cal-booking iframe{display:block;border:0!important;margin:0!important;padding:0!important}#cal-booking .cal-loading{display:none!important}.cal-shell{background:#17100d}
+
+/* Réservation par fenêtre popup : suppression de l'espace blanc de l'ancien embed */
+.reservation-popup{background:radial-gradient(ellipse at 85% 0%,#51321c,#25160e 55%,#1a100b)}
+.reservation-popup-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:46px;align-items:center;background:#2b1b12;border:1px solid #805436;border-radius:22px;padding:54px 57px;box-shadow:0 22px 80px #10090560}
+.reservation-popup-inner>div>p{max-width:570px;color:#d8bfa7;font-size:15px}
+.reservation-popup-actions{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin:28px 0 20px}
+.reservation-popup-actions .btn{font-family:inherit}
+.reservation-popup-caption{font-size:11px!important;color:#ac8d75!important}
+.reservation-popup-side{padding:30px 32px;border-radius:15px;border:1px solid #89603f;background:linear-gradient(135deg,#3b2618,#24150e)}
+.reservation-popup-side strong{display:block;font:750 24px/1.3 "Plus Jakarta Sans",sans-serif;letter-spacing:-.05em;margin:17px 0 25px}
+.reservation-popup-step{display:flex;gap:18px;align-items:center;padding:14px 0;border-top:1px solid #835a3b78;color:#eedbc6;font-size:13px}
+.reservation-popup-step span{color:#e7b877;font-weight:800}
+.reservation-popup-phone{display:flex;flex-direction:column;gap:7px;font-size:12px;color:#c0a38d;margin-top:24px}
+.reservation-popup-phone a{font-size:19px;font-weight:800;color:#f2c78e}
+@media(max-width:950px){.reservation-popup-inner{grid-template-columns:1fr;gap:26px;padding:32px}.reservation-popup-side{padding:24px}}
+@media(max-width:680px){.reservation-popup-inner{width:calc(100% - 26px);padding:25px 19px;gap:22px}.reservation-popup-actions{align-items:stretch;flex-direction:column}.reservation-popup-actions .btn{justify-content:space-between}.reservation-popup-side strong{font-size:21px}}
