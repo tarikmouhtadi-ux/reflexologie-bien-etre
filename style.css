@@ -141,3 +141,6 @@ h2{font-size:clamp(38px,4.15vw,57px);line-height:1.18;font-weight:750}
   .sticky-actions .sticky-book{display:none!important}
   .sticky-actions .sticky-call{display:flex!important;flex:1 1 100%;width:100%;font-size:14px;min-height:50px;padding:13px 18px;box-sizing:border-box}
 }
+
+/* Sur téléphone, masquer les deux boutons d'action de l'accueil uniquement. */
+@media(max-width:680px){.hero .hero-actions{display:none!important}}
